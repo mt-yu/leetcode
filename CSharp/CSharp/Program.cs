@@ -11,7 +11,12 @@ namespace CSharp
         static void Main(string[] args)
         {
             Solution sol = new Solution();
-            sol.Show();
+
+
+            /*929.独特的电子邮件*/
+            string[] emails = {"test.email+alex@leetcode.com", "test.e.mail+bob.cathy@leetcode.com", "testemail+david@lee.tcode.com"};
+            Console.WriteLine(sol.NumUniqueEmails(emails));
+
 
             Console.ReadKey();
         }
