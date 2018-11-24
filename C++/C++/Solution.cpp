@@ -1,7 +1,8 @@
 #include <iostream>
 #include "Solution.h"
-#include <algorithm>
-
+#include <algorithm>	//定义了一系列针对标准模版库容器执行算法的模板函数。如sort()
+#include <functional>      // For greater<int>( )
+#include <list>
 #pragma region 771.宝石与石头
 /*
 	 给定字符串J 代表石头中宝石的类型，和字符串 S代表你拥有的石头。
@@ -53,3 +54,59 @@ int Solution::numJewelsInStones(string J, string S)
 	return ret;
 }
 #pragma endregion
+
+#pragma region 905.按奇偶排序数组
+/*
+给定一个非负整数数组 A，返回一个由 A 的所有偶数元素组成的数组，后面跟 A 的所有奇数元素。
+
+你可以返回满足此条件的任何数组作为答案。
+
+
+
+示例：
+
+输入：[3,1,2,4]
+输出：[2,4,3,1]
+输出 [4,2,3,1]，[2,4,1,3] 和 [4,2,1,3] 也会被接受。
+
+
+
+提示：
+
+	1 <= A.length <= 5000
+	0 <= A[i] <= 5000
+*/
+
+
+bool UDgreater(int elem1, int elem2)
+{
+	return elem1 > elem2;
+}
+
+vector<int> Solution::sortArrayByParity(vector<int>& A)
+{
+	if (A.empty())	//	判断是否为空
+		std::cout << "The vector is empty." << std::endl;
+
+	std::sort(A.begin(), A.end());
+
+	vector<int> Even;
+	vector<int> Odd;
+
+	for (vector<int>::iterator it = A.begin(); it != A.end(); ++it)
+	{
+		if (*it % 2 == 0)
+		{
+			Even.emplace_back(*it);
+			continue;
+		}			
+		Odd.emplace_back(*it);
+	}
+
+	Even.insert(Even.end(), Odd.begin(), Odd.end());
+
+	return Even;
+}
+
+#pragma endregion
+
