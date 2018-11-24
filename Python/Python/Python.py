@@ -2,4 +2,6 @@ from Solution import Solution
 
 sol = Solution()
 
-sol.numJewelsInStones()
+#709.转换成小写字母
+print(sol.toLowerCase("HELLO"))
+
