@@ -81,19 +81,20 @@ namespace CSharp
         /// <returns></returns>
         public int[][] FlipAndInvertImage(int[][] A)
         {
+            int[][] B =  (int[][]) A.Clone();   //创建数组的浅拷贝， 不改变传入的数组
             int i, j;
-            for (i = 0; i <= A.GetUpperBound(0); i++) //A.GetUpperBound(0)获取 数组的 行数
+            for (i = 0; i <= B.GetUpperBound(0); i++) //A.GetUpperBound(0)获取 数组的 行数
             {
-                Array.Reverse(A[i]);    // 反转每一行
-                for (j = 0; j <= A[i].GetUpperBound(0); j++) //获取数组第i行的数组上界 得到对应行的列数
+                Array.Reverse(B[i]);    // 反转每一行
+                for (j = 0; j <= B[i].GetUpperBound(0); j++) //获取数组第i行的数组上界 得到对应行的列数
                 {
-                    if (A[i][j] == 1)
-                        A[i][j] = 0;
+                    if (B[i][j] == 1)
+                        B[i][j] = 0;
                     else
-                        A[i][j] = 1;
+                        B[i][j] = 1;
                 }
             }
-            return A;
+            return B;
         }
 
 
