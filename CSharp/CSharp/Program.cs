@@ -19,21 +19,27 @@ namespace CSharp
 
             /*832. 翻转图像 测试*/
             // 定义一个 3*3 和 4*4  的输入数组 
-            //二维数组
+            //二维数组(*)
             //int[,] a = new int[3, 3] { { 1, 1, 0 }, { 1, 0, 1 }, { 0, 0, 0 } };
             //int[,] b = new int[4, 4] { { 1, 1, 0, 0 }, { 1, 0, 0, 1 }, { 0, 1, 1, 1 }, { 1, 0, 1, 0 } };
-            int i, j;
-            //交错数组
-            int[][] a = new int[][] { new int[] { 1, 1, 0 }, new int[] { 0, 0, 1 }, new int[] { 1, 0, 0 } };
-            int[][] b = new int[][] { new int[] { 1, 1, 0, 0, 1 }, new int[] { 1, 0, 0, 1 }, new int[] { 0, 1, 1, 1 }, new int[] { 1, 0, 1, 0 }, new int[] { 1, 0, 1, 0 }, new int[] { 1, 0, 1, 0 } };
-            int[][] temp = sol.FlipAndInvertImage(a);
-            for (i = 0; i <= temp.GetUpperBound(0); i++)
-            {
-                for (j = 0; j <= temp[i].GetUpperBound(0); j++)
-                    Console.Write(temp[i][j]);
-                Console.WriteLine("");
-            }
 
+            //int i, j;
+            ////交错数组
+            //int[][] a = new int[][] { new int[] { 1, 1, 0 }, new int[] { 0, 0, 1 }, new int[] { 1, 0, 0 } };
+            //int[][] b = new int[][] { new int[] { 1, 1, 0, 0, 1 }, new int[] { 1, 0, 0, 1 }, new int[] { 0, 1, 1, 1 }, new int[] { 1, 0, 1, 0 }, new int[] { 1, 0, 1, 0 }, new int[] { 1, 0, 1, 0 } };
+            //int[][] temp = sol.FlipAndInvertImage(a);
+            //for (i = 0; i <= temp.GetUpperBound(0); i++)
+            //{
+            //    for (j = 0; j <= temp[i].GetUpperBound(0); j++)
+            //        Console.Write(temp[i][j]);
+            //    Console.WriteLine("");
+            //}
+
+
+            /*804. 唯一摩尔斯密码词*/
+            string[] words = { "sdck","anayg","ppon"};
+            Console.WriteLine(sol.UniqueMorseRepresentations(words));
+            
 
             Console.ReadKey();
         }

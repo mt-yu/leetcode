@@ -5,7 +5,12 @@
     >>arr.GetUpperBound(0) //获取二维数组的行数
     >>>arr[0].GetUpperBound(0) //获取二维数组的列数
 
+##### 804. 唯一摩尔斯密码词
+    BinarySearch() 查找时候，要进行排序 否则会出错
+    indexOf()  //可以不排序，相当于顺序查找。
 
+    可以用HashSet 的自动去重功能 也可以
+    我这里用的是动态数组。
 
 
 
