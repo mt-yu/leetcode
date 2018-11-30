@@ -9,3 +9,5 @@ sol = Solution()
 a = sol.hammingDistance(2,5)
 print(a)
 
+range(10)
+range(1,10,2)
