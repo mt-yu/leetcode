@@ -1061,4 +1061,18 @@ body .markdown-body
 </pre></div>
 
 
-<p><a href="https://blog.csdn.net/qq_32320399/article/details/81518476">ios::sync_with_stdio(false)</a></p></article></body></html>
+<p><a href="https://blog.csdn.net/qq_32320399/article/details/81518476">ios::sync_with_stdio(false)</a></p>
+<h5 id="476-c">476. 数字的补数(C++)<a class="headerlink" href="#476-c" title="Permanent link"></a></h5>
+<div class="codehilite"><pre>int flag = 0;
+int tem = num;
+while (tem) {
+    tem &gt;&gt;= 1;
+    flag++;
+}
+int sum = 1;
+for (; flag &gt; 1; flag--) {
+    sum &lt;&lt;= 1;
+    sum += 1;
+}
+return sum - num;
+</pre></div></article></body></html>

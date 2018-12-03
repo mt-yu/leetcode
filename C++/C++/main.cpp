@@ -20,11 +20,14 @@ int main(void)
 	//}
 
 	/*657. 机器人能否返回原点*/
-	string move = "UU";
-	bool b = solution.judgeCircle(move);
-	std::cout.setf(std::ios_base::boolalpha);	//使布尔类型输出不转换为整型输出
-	std::cout << b << std::endl;
+	//string move = "UU";
+	//bool b = solution.judgeCircle(move);
+	//std::cout.setf(std::ios_base::boolalpha);	//使布尔类型输出不转换为整型输出
+	//std::cout << b << std::endl;
 
+	/*476. 数字的补数*/
+	int a = solution.findComplement(5);
+	std::cout << a << std::endl;
 	getchar();
 	//system("calc");
 	return 0;
