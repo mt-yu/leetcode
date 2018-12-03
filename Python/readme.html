@@ -1057,4 +1057,23 @@ body .markdown-body
 .codehilite .gc{color:#999;background-color:#EAF2F5}
 </style><title>readme</title></head><body><article class="markdown-body"><h5 id="461-python">461. 汉明距离(python)<a class="headerlink" href="#461-python" title="Permanent link"></a></h5>
 <div class="codehilite"><pre>    可以通过 str.count(&#39;1&#39;) 的方法返回x与y异或后的结果
+</pre></div>
+
+
+<h5 id="922-ii">922. 按奇偶排序数组 II<a class="headerlink" href="#922-ii" title="Permanent link"></a></h5>
+<div class="codehilite"><pre>    o_list = list()
+    e_list = list()
+    res = list()
+
+    for v in A:
+        if (v % 2 == 0):
+            e_list.append(v)
+        if (v % 2 == 1):
+            o_list.append(v)
+
+    for i in range(len(o_list)):
+        res.append(e_list[i])
+        res.append(o_list[i])
+
+    return res
 </pre></div></article></body></html>
