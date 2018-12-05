@@ -2,6 +2,7 @@
         可以通过 str.count('1') 的方法返回x与y异或后的结果
 
 ##### 922. 按奇偶排序数组 II
+        #其他方法
         o_list = list()
         e_list = list()
         res = list()
@@ -17,3 +18,7 @@
             res.append(o_list[i])
         
         return res
+
+##### 617. 合并二叉树
+        根节点相加
+        递归每一个左右子树相加

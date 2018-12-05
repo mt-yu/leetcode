@@ -12,9 +12,22 @@ def main():
     '#print(a)'
 
     # 922. 按奇偶排序数组 II
-    a = [4, 2, 8, 6, 1, 1, 1, 1]
-    sol.sortArrayByParityII(a)
+    # a = [4, 2, 8, 6, 1, 1, 1, 1]
+    # sol.sortArrayByParityII(a)
 
+    # 617. 合并二叉树
+    r1 = Solution.TreeNode(1)
+    r1.left = Solution.TreeNode(3)
+    r1.right = Solution.TreeNode(2)
+    r1.left.left = Solution.TreeNode(5)
+
+    r2 = Solution.TreeNode(2)
+    r2.left = Solution.TreeNode(1)
+    r2.right = Solution.TreeNode(3)
+    r2.left.right = Solution.TreeNode(4)
+    r2.right.right = Solution.TreeNode(7)
+
+    s = sol.mergeTrees(r1, r2)
 
 if __name__ == '__main__':
     main()
