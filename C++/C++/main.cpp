@@ -26,9 +26,17 @@ int main(void)
 	//std::cout << b << std::endl;
 
 	/*476. 数字的补数*/
-	int a = solution.findComplement(5);
-	std::cout << a << std::endl;
-	getchar();
-	//system("calc");
+	//int a = solution.findComplement(5);
+	//std::cout << a << std::endl;
+	//getchar();
+
+	/*344. 反转字符串*/
+	string str = "aa";
+	std::cout << solution.reverseString(str) << std::endl;
+
+
+
+
+	system("pause");
 	return 0;
 }

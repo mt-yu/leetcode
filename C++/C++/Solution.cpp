@@ -213,3 +213,41 @@ int Solution::findComplement(int num)
 }
 
 #pragma endregion
+
+#pragma region 344. 反转字符串
+/*
+编写一个函数，其作用是将输入的字符串反转过来。
+
+示例 1:
+
+输入: "hello"
+输出: "olleh"
+
+示例 2:
+
+输入: "A man, a plan, a canal: Panama"
+输出: "amanaP :lanac a ,nalp a ,nam A"
+*/
+
+string Solution::reverseString(string s)
+{
+	string restr = "";	//用于存放返回字符串
+	if (!s.empty())
+	{
+		std::basic_string <char>::iterator str_rIter;			//iterator 提供可读取或修改字符串中任何元素的随机访问迭代器的类型
+		std::basic_string <char>::iterator strp_Iter;			
+		str_rIter = s.end();	//得到最后一个元素之后的位置
+		strp_Iter = s.begin();
+		do
+		{
+			str_rIter--;
+			restr.push_back(*str_rIter);
+		} while (strp_Iter != str_rIter);
+	}
+	//std::reverse(s.begin(), s.end());	//直接调用算法头文件中的方法
+	return restr;
+}
+
+
+
+#pragma endregion

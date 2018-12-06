@@ -18,3 +18,6 @@
         sum += 1;
     }
     return sum - num;
+
+##### 344. 反转字符串
+    return reverse(s.begin(), s.end());

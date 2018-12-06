@@ -16,5 +16,8 @@ public:
 	bool judgeCircle(string moves);
 	/*476. 数字的补数*/
 	int findComplement(int num);
+	/*344. 反转字符串*/
+	string reverseString(string s);
+
 
 };
