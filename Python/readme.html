@@ -1061,7 +1061,8 @@ body .markdown-body
 
 
 <h5 id="922-ii">922. 按奇偶排序数组 II<a class="headerlink" href="#922-ii" title="Permanent link"></a></h5>
-<div class="codehilite"><pre>    o_list = list()
+<div class="codehilite"><pre>    #其他方法
+    o_list = list()
     e_list = list()
     res = list()
 
@@ -1076,4 +1077,17 @@ body .markdown-body
         res.append(o_list[i])
 
     return res
+</pre></div>
+
+
+<h5 id="617">617. 合并二叉树<a class="headerlink" href="#617" title="Permanent link"></a></h5>
+<div class="codehilite"><pre>    根节点相加
+    递归每一个左右子树相加
+</pre></div>
+
+
+<h5 id="237">237. 删除链表中的节点<a class="headerlink" href="#237" title="Permanent link"></a></h5>
+<div class="codehilite"><pre>    node.val = node.next.val
+    node.next = node.next.next
+    问题:不清楚Python怎么去传入这个节点的对象到里面去
 </pre></div></article></body></html>

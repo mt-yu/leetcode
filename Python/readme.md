@@ -22,3 +22,8 @@
 ##### 617. 合并二叉树
         根节点相加
         递归每一个左右子树相加
+
+##### 237. 删除链表中的节点
+        node.val = node.next.val
+        node.next = node.next.next
+        问题:不清楚Python怎么去传入这个节点的对象到里面去
