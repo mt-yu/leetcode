@@ -41,26 +41,27 @@ namespace CSharp
             //Console.WriteLine(sol.UniqueMorseRepresentations(words));
 
             /*226. 翻转二叉树*/
-            Solution.TreeNode root = new Solution.TreeNode(4);
-            Solution.TreeNode l1 = new Solution.TreeNode(2);
-            Solution.TreeNode r1 = new Solution.TreeNode(7);
-            root.left = l1;
-            root.right = r1;
-            Solution.TreeNode l1l = new Solution.TreeNode(1);
-            Solution.TreeNode l1r = new Solution.TreeNode(3);
-            Solution.TreeNode r1l = new Solution.TreeNode(6);
-            Solution.TreeNode r1r = new Solution.TreeNode(9);
-            l1.left = l1l;
-            l1.right = l1r;
-            r1.left = r1l;
-            r1.right = r1r;
+            //Solution.TreeNode root = new Solution.TreeNode(4);
+            //Solution.TreeNode l1 = new Solution.TreeNode(2);
+            //Solution.TreeNode r1 = new Solution.TreeNode(7);
+            //root.left = l1;
+            //root.right = r1;
+            //Solution.TreeNode l1l = new Solution.TreeNode(1);
+            //Solution.TreeNode l1r = new Solution.TreeNode(3);
+            //Solution.TreeNode r1l = new Solution.TreeNode(6);
+            //Solution.TreeNode r1r = new Solution.TreeNode(9);
+            //l1.left = l1l;
+            //l1.right = l1r;
+            //r1.left = r1l;
+            //r1.right = r1r;
 
 
-            sol.InvertTree(root);
+            //sol.InvertTree(root);
 
-            Console.WriteLine(root.val);
+            //Console.WriteLine(root.val);
 
-
+            /*292. Nim游戏*/
+            Console.WriteLine(sol.CanWinNim(4)); 
 
 
             Console.ReadKey();
