@@ -21,3 +21,19 @@
 
 ##### 344. 反转字符串
     return reverse(s.begin(), s.end());
+
+##### 728.自除数
+    vector<int> ret;
+    for (int i = left; i <= right; i++)
+    {
+        int k = 1, temp = i;
+        while (k <= i) k *= 10; k /= 10;    #得到 i 的位数
+        while (k > 0) {
+            if (temp / k == 0) break;       #判断除数是否为零
+            if (i % (temp / k) != 0) break; #判断是否可以背 整除
+            temp -= (temp / k)*k;           #去掉最高位
+            k /= 10;                        #得到新的位数
+        }
+        if (k == 0) ret.push_back(i);
+    }
+    return ret;

@@ -1080,4 +1080,22 @@ return sum - num;
 
 <h5 id="344">344. 反转字符串<a class="headerlink" href="#344" title="Permanent link"></a></h5>
 <div class="codehilite"><pre>return reverse(s.begin(), s.end());
+</pre></div>
+
+
+<h5 id="728">728.自除数<a class="headerlink" href="#728" title="Permanent link"></a></h5>
+<div class="codehilite"><pre>vector&lt;int&gt; ret;
+for (int i = left; i &lt;= right; i++)
+{
+    int k = 1, temp = i;
+    while (k &lt;= i) k *= 10; k /= 10;    #得到 i 的位数
+    while (k &gt; 0) {
+        if (temp / k == 0) break;       #判断除数是否为零
+        if (i % (temp / k) != 0) break; #判断是否可以背 整除
+        temp -= (temp / k)*k;           #去掉最高位
+        k /= 10;                        #得到新的位数
+    }
+    if (k == 0) ret.push_back(i);
+}
+return ret;
 </pre></div></article></body></html>
