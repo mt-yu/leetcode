@@ -18,6 +18,6 @@ public:
 	int findComplement(int num);
 	/*344. ·´×ª×Ö·û´®*/
 	string reverseString(string s);
-
+	vector<int> selfDividingNumbers(int left, int right);
 
 };

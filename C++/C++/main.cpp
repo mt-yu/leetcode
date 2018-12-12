@@ -31,10 +31,11 @@ int main(void)
 	//getchar();
 
 	/*344. 反转字符串*/
-	string str = "aa";
-	std::cout << solution.reverseString(str) << std::endl;
+	//string str = "aa";
+	//std::cout << solution.reverseString(str) << std::endl;
 
-
+	/*728. 自除数*/
+	vector<int> a = solution.selfDividingNumbers(11, 128);
 
 
 	system("pause");
